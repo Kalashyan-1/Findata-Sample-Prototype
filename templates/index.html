@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Counts</title>
+    <style>
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px; /* Increase font size to 20px */
+        margin: 4px 2px;
+        cursor: pointer;
+        
+      }
+
+      .searchButton {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+        background-color: #3f8eb297; /* Green */
+        margin: 40px;
+      }
+
+      .inputSearchInput {
+        width: 800px;
+        height: 30px;
+        padding: 15px 32px;
+        margin: 20px 10px;
+
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+
+  <body>
+    <!-- <h1>Order Counts</h1> -->
+    <!-- <div id="plot"></div> -->
+    
+    <input type="text" placeholder="Search" class="inputSearchInput" style="font-size: 20px;"/>
+    <button class="searchButton" >Search</button>
+
+    <h1>The chart shows the order quantity for each month</h1>
+
+    <canvas class="myChart" height="18px" width="50px"></canvas>
+    
+    <div>
+      <script
+        charset="utf-8"
+        src="https://cdn.plot.ly/plotly-2.27.0.min.js"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
